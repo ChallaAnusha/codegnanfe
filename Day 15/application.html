@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Responsive Home Page</title>
+	<style>
+		@media (min-width: 1200px){
+			.a{
+				background-color: lightblue;
+				width: 100%;
+				padding: 20px;
+				display: grid;
+				grid-template-columns: 12% 12% 12% 40% 12% auto;
+			}
+			.a div{
+				background-color: black;
+				color: white;
+				font-weight: bold;
+				border: solid;
+				border-color: white;
+				padding: 10px;
+				width: 100px;
+				border-radius: 30px;
+				text-align: center;
+			}
+		}
+		@media (max-width: 1200px) and (min-width: 600px){
+			.a{
+				background-color: lightblue;
+				width: 100%;
+				padding: 20px;
+				display: grid;
+				grid-template-columns: 15% 15% 38% 15% auto;
+			}
+			.a div{
+				background-color: black;
+				color: white;
+				font-weight: bold;
+				border: solid;
+				border-color: white;
+				padding: 10px;
+				width: 100px;
+				border-radius: 30px;
+				text-align: center;
+			}
+			.aa{
+				display: none;
+			}
+		}
+		@media (max-width: 600px){
+			.a{
+				background-color: lightblue;
+				width: 100%;
+				padding: 20px;
+				display: grid;
+				grid-template-columns: auto auto auto auto;
+				position: absolute;
+				border-radius: 30px;
+				box-shadow: 0px 0px 10px blue;
+			}
+			.a div{
+				background-color: black;
+				color: white;
+				font-weight: bold;
+				border: solid;
+				border-color: white;
+				padding: 5px;
+				width: 100px;
+				border-radius: 30px;
+				text-align: center;
+			}
+			.aa{
+				display: none;
+			}
+			.ab{
+				display: none;
+			}
+		}
+		}
+	</style>
+</head>
+<body>
+	<div class="a">
+		<div>
+			Home
+		</div>
+		<div>
+			Movies
+		</div>
+		<div>
+			Music
+		</div>
+		<div class="aa">
+			Play
+		</div>
+		<div class="ab">
+			Signup
+		</div>
+		<div>
+			Login
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Responsive</title>
+	<style>
+		@media(min-width: 1200px){
+			body{
+				background-color: lightgreen;
+			}
+			.f1{
+				display: flex;
+			}
+		}
+		@media(max-width: 1200px) and (min-width: 600px){
+			body{
+				background-color: lightpink;
+			}
+			.f1{
+				display: grid;
+				grid-template-columns: auto auto auto auto;
+				row-gap: 20px;
+			}
+		}
+		@media(max-width: 600px){
+			body{
+				background-color: lightgoldenrodyellow;
+			}
+			.f1{
+				display: grid;
+				grid-template-columns: auto auto;
+				row-gap: 20px;
+			}
+		}
+		.f1 div{
+			height: 100px;
+			width: 100px;
+			border: solid;
+			background-color: lightskyblue;
+			text-align: center;
+			align-content: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="f1">
+		<div>
+			Item 1
+		</div>
+		<div>
+			Item 2
+		</div>
+		<div>
+			Item 3
+		</div>
+		<div>
+			Item 4
+		</div>
+		<div>
+			Item 5
+		</div>
+		<div>
+			Item 1
+		</div>
+		<div>
+			Item 2
+		</div>
+		<div>
+			Item 3
+		</div>
+		<div>
+			Item 4
+		</div>
+		<div>
+			Item 5
+		</div>
+		<div>
+			Item 1
+		</div>
+		<div>
+			Item 2
+		</div>
+		<div>
+			Item 3
+		</div>
+		<div>
+			Item 4
+		</div>
+		<div>
+			Item 5
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+console.log("Arrays");
+let a=[10,20,'sai',39.67];
+var b= new Array(11,34,'vasu','anu',77.5);
+console.log(a);
+console.log(b);
+console.log(a[2]);
+console.log(b[3]);
+a[0]=1000;
+console.log(a[0]);
+b[4]='santosh';
+console.log(b[4]);
+let x= [10,20,30,'a','b','c'];
+console.log(x);
+x.push('d');
+console.log(x);
+x.pop();
+console.log(x);
+y=x.shift();
+console.log(x);
+console.log(y);
+y=x.unshift(70);
+console.log(x);
+console.log(y);
+y=x.slice(2,4);
+console.log(y);
+z=x.slice(4);
+console.log(z);
+console.log(x);
+p=[10,20,30];
+q=[40,50,60];
+r=p.concat(q);
+console.log(r);
+u=['a','b','c','d',10,20,30];
+v=u.join('$');
+console.log(v);
+w=u.indexOf(10);
+console.log(w);
+u.forEach(function(u){
+    console.log(u);
+});
+j=[1,2,3,4,5,6,7,8,9,10];
+let triple=j.map(function(j){
+    return j*3;
+});
+console.log(triple);
+let odd=j.filter(function(j){
+    return j%2!=0;
+});
+console.log(odd);
+let multiple=j.reduce(function(accumulator,currentValue){
+    return accumulator*currentValue;
+}, 1);
+console.log(multiple);

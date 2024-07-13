@@ -1,0 +1,13 @@
+console.log("Strings");
+let fname='Challa';
+let lname="Anusha";
+console.log(fname);
+console.log(lname);
+var a=fname.length;
+console.log(a);
+let fullName=fname.concat(" ",lname);
+console.log(fullName);
+let greet='Hello'+','+' '+fullName+'!';
+console.log(greet);
+let b=greet[9];
+console.log(b);
